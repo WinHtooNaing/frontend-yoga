@@ -36,6 +36,7 @@ const Navbar = () => {
 
         <div class="navbar navbar-expand-lg bg-dark navbar-dark" >
             <div class="container-fluid">
+            <img src="../assets/img/logo2.png" style={{width:'80px',height:'50px'}} alt='logo'/>
                 <a href="/" class="navbar-brand">Feme<span>Chisel</span>Shape</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>

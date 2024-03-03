@@ -9,7 +9,6 @@ import Yoga from "./components/users/Yoga";
 import Cardio from "./components/users/Cardio";
 import Zumba from "./components/users/Zumba";
 import AdminMain from "./layouts/AdminMain";
-import Dashboard from "./components/admin/Dashboard";
 import Sessions from "./components/admin/Sessions";
 import Trainers from "./components/admin/Trainer";
 import Classs from "./components/admin/Class";
@@ -20,7 +19,6 @@ import EditClass from "./components/admin/EditClass";
 import AddSessions from "./components/admin/AddSessions";
 import EditSessions from "./components/admin/EditSessions";
 import Login from "./Auth/Login";
-import Register from "./Auth/Register";
 
 
 function App() {
@@ -75,13 +73,9 @@ function App() {
           children : [
             {
               index: true,
-              element: <Dashboard   />,
+              element: <Trainers   />,
             }
             ,
-            {
-              path:"/admin/trainer",
-              element: <Trainers/>
-            },
             {
               path:"/admin/class",
               element: <Classs/>
@@ -94,7 +88,7 @@ function App() {
               element:<AddTrainer/>
             }
             ,{
-              path : "/admin/edit-trainer",
+              path : "/admin/edit-trainer/:id",
               element:<EditTrainer/>
             }
             ,{
@@ -102,7 +96,7 @@ function App() {
               element:<AddClass/>
             }
             ,{
-              path : "/admin/edit-class",
+              path : "/admin/edit-class/:id",
               element:<EditClass/>
             }
             ,{
@@ -118,10 +112,6 @@ function App() {
         {
           path:"/login",
           element:<Login/>
-        },
-        {
-          path:"/register",
-          element:<Register/>
         }
         
 ])

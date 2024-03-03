@@ -10,14 +10,9 @@ const AdminNavbar = () => {
             <span class="text">Admin Panel</span>
         </a>
         <ul class="side-menu top">
-            <li class="active" >
-                <NavLink to="/admin/" id="a" style={{textDecoration:"none"}}>
-                    <i class="bx bxs-dashboard"></i>
-                    <span class="text">Dashboard</span>
-                </NavLink>
-            </li>
+           
             <li >
-                <NavLink to="/admin/trainer" id="a" style={{textDecoration:"none"}}>
+                <NavLink to="/admin/" id="a" style={{textDecoration:"none"}}>
                     <i class="bx bxs-shopping-bag-alt"></i>
                     <span class="text">Trainer</span>
                 </NavLink>
